@@ -28,4 +28,4 @@ If you want to test the application with docker, you can do so by building a doc
 * Payara: `mvn -Pdocker-payara`
 * WildFly: `mvn -Pdocker-wildfly`
 
-Run the build image by `docker run -d -p 8080:8080 -p 9990:9990 gedoplan/health-demo-XXX` with `XXX` replaced by `openliberty`, `payara` or `wildfly` resp.
+Run the build image by `docker run -d -p 8080:8080 -p 9990:9990 gedoplan/health-demo-XXX` with `XXX` replaced by `openliberty`, `payara` or `wildfly` resp. The port mapping `-p 9990:9990` is needed for WildFly only.
